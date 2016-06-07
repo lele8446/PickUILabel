@@ -61,4 +61,6 @@ typedef enum : NSUInteger {
  *  清除数字
  */
 - (void)clearNum;
+
+- (void)initializeStatus;
 @end

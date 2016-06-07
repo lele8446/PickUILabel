@@ -7,8 +7,10 @@
 //
 
 #import "PickerLabelView.h"
+#import <objc/runtime.h>
 
 #define ViewAutoresizingFlexibleAll UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleBottomMargin
+#define iOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 @interface PickerLabelView ()<UIPickerViewDataSource,UIPickerViewDelegate>
 @property (nonatomic, strong) UIPickerView *pickView;
@@ -28,6 +30,20 @@
     _value = value;
     [self reverseValue:value];
     [self.pickView reloadAllComponents];
+    //隐藏分割线
+    UIView *_topLineView = [self.pickView valueForKeyPath:@"_topLineView"];
+    UIView *_bottomLineView = [self.pickView valueForKeyPath:@"_bottomLineView"];
+    _topLineView.hidden = _bottomLineView.hidden = YES;
+
+    NSMutableArray *_tables = [self.pickView valueForKeyPath:@"_tables"];
+    for (UIView *columnView in _tables) {
+        for (UIView *childView in columnView.subviews) {
+            if (childView.frame.origin.y == 0 || childView.frame.origin.y > 2*self.bounds.size.height) {
+                childView.hidden = YES;
+            }
+        }
+    }
+
 }
 
 - (void)setAnimationType:(PickerLabelAnimationType)animationType {
@@ -106,13 +122,18 @@
     }
 }
 
+- (void)initializeStatus {
+    self.value = powl(10, self.componentsNumber);;
+    [self startAnimation];
+    [self clearNum];
+}
+
 #pragma mark - privte method
 - (void)commonInit {
     self.pickList = [[NSArray alloc]initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",nil];
     self.valueDic = [NSMutableDictionary dictionary];
     self.digitNumber = 1;
     self.times = 0;
-    self.value = 0;
     self.value = 0;
     self.animationType = AnimationAll;
     
@@ -124,11 +145,15 @@
     self.pickView.backgroundColor = [UIColor clearColor];
     self.pickView.userInteractionEnabled = NO;
     [self addSubview:self.pickView];
+    if (iOS_VERSION < 9.0)
+    {
+        self.pickView.center = CGPointMake(self.pickView.center.x, self.bounds.size.height/2);
+    }
 }
 
 - (NSTimer *)customTimer {
     if (!self.timer) {
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.06 target:self selector:@selector(increaseNum) userInfo:nil repeats:YES];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.10 target:self selector:@selector(increaseNum) userInfo:nil repeats:YES];
         self.timer = timer;
     }
     return self.timer;
@@ -225,8 +250,8 @@
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
-    //4 是列与列之间的间距
-    return (self.bounds.size.width-(self.componentsNumber-1)*4)/self.componentsNumber;
+    //5 是列与列之间的间距
+    return (self.bounds.size.width-(self.componentsNumber-1)*5)/self.componentsNumber;
 }
 // 返回选中的行
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
@@ -243,9 +268,13 @@
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
-    UILabel* pickerLabel = (UILabel*)view;
+    if (!view) {
+        view = [[UIView alloc]init];
+    }
+    UILabel* pickerLabel = nil;
     if (!pickerLabel){
         pickerLabel = [[UILabel alloc] init];
+        pickerLabel.frame = CGRectMake(0, 0, (self.bounds.size.width-(self.componentsNumber-1)*5)/self.componentsNumber, self.bounds.size.height);
         pickerLabel.minimumScaleFactor = 2;
         pickerLabel.textColor = self.textColor;
         pickerLabel.adjustsFontSizeToFitWidth = YES;
@@ -254,6 +283,7 @@
         [pickerLabel setFont:self.textFont];
     }
     pickerLabel.text = [self pickerView:pickerView titleForRow:row forComponent:component];
+    [view addSubview:pickerLabel];
     return pickerLabel;
 }
 @end

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41EDBAC1CFC24AB00E681D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBAB1CFC24AB00E681D3 /* main.m */; };
-		B41EDBAF1CFC24AB00E681D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBAE1CFC24AB00E681D3 /* AppDelegate.m */; };
-		B41EDBB21CFC24AB00E681D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBB11CFC24AB00E681D3 /* ViewController.m */; };
-		B41EDBB51CFC24AB00E681D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41EDBB31CFC24AB00E681D3 /* Main.storyboard */; };
-		B41EDBB71CFC24AB00E681D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41EDBB61CFC24AB00E681D3 /* Assets.xcassets */; };
-		B41EDBBA1CFC24AB00E681D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41EDBB81CFC24AB00E681D3 /* LaunchScreen.storyboard */; };
 		B41EDBC51CFC24AB00E681D3 /* PickUILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBC41CFC24AB00E681D3 /* PickUILabelTests.m */; };
 		B41EDBD01CFC24AB00E681D3 /* PickUILabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBCF1CFC24AB00E681D3 /* PickUILabelUITests.m */; };
-		B41EDBDF1CFC251600E681D3 /* PickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBDE1CFC251600E681D3 /* PickerLabelView.m */; };
+		B431D5491D055AF600228988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B431D53C1D055AF600228988 /* AppDelegate.m */; };
+		B431D54A1D055AF600228988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B431D53D1D055AF600228988 /* Assets.xcassets */; };
+		B431D54B1D055AF600228988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431D53E1D055AF600228988 /* LaunchScreen.storyboard */; };
+		B431D54C1D055AF600228988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431D5401D055AF600228988 /* Main.storyboard */; };
+		B431D54D1D055AF600228988 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B431D5421D055AF600228988 /* Info.plist */; };
+		B431D54E1D055AF600228988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B431D5431D055AF600228988 /* main.m */; };
+		B431D54F1D055AF600228988 /* PickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B431D5461D055AF600228988 /* PickerLabelView.m */; };
+		B431D5501D055AF600228988 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B431D5481D055AF600228988 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,23 +38,23 @@
 
 /* Begin PBXFileReference section */
 		B41EDBA71CFC24AB00E681D3 /* PickUILabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickUILabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41EDBAB1CFC24AB00E681D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B41EDBAD1CFC24AB00E681D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B41EDBAE1CFC24AB00E681D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B41EDBB01CFC24AB00E681D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B41EDBB11CFC24AB00E681D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B41EDBB41CFC24AB00E681D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B41EDBB61CFC24AB00E681D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B41EDBB91CFC24AB00E681D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B41EDBBB1CFC24AB00E681D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41EDBC01CFC24AB00E681D3 /* PickUILabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUILabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EDBC41CFC24AB00E681D3 /* PickUILabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUILabelTests.m; sourceTree = "<group>"; };
 		B41EDBC61CFC24AB00E681D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41EDBCB1CFC24AB00E681D3 /* PickUILabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUILabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EDBCF1CFC24AB00E681D3 /* PickUILabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUILabelUITests.m; sourceTree = "<group>"; };
 		B41EDBD11CFC24AB00E681D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B41EDBDD1CFC251600E681D3 /* PickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerLabelView.h; sourceTree = "<group>"; };
-		B41EDBDE1CFC251600E681D3 /* PickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerLabelView.m; sourceTree = "<group>"; };
+		B431D53B1D055AF600228988 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B431D53C1D055AF600228988 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B431D53D1D055AF600228988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B431D53F1D055AF600228988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B431D5411D055AF600228988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B431D5421D055AF600228988 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B431D5431D055AF600228988 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B431D5451D055AF600228988 /* PickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerLabelView.h; sourceTree = "<group>"; };
+		B431D5461D055AF600228988 /* PickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerLabelView.m; sourceTree = "<group>"; };
+		B431D5471D055AF600228988 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B431D5481D055AF600228988 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 		B41EDB9E1CFC24AB00E681D3 = {
 			isa = PBXGroup;
 			children = (
-				B41EDBA91CFC24AB00E681D3 /* PickUILabel */,
+				B431D53A1D055AF600228988 /* PickUILabel */,
 				B41EDBC31CFC24AB00E681D3 /* PickUILabelTests */,
 				B41EDBCE1CFC24AB00E681D3 /* PickUILabelUITests */,
 				B41EDBA81CFC24AB00E681D3 /* Products */,
@@ -99,32 +100,6 @@
 				B41EDBCB1CFC24AB00E681D3 /* PickUILabelUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B41EDBA91CFC24AB00E681D3 /* PickUILabel */ = {
-			isa = PBXGroup;
-			children = (
-				B41EDBAD1CFC24AB00E681D3 /* AppDelegate.h */,
-				B41EDBAE1CFC24AB00E681D3 /* AppDelegate.m */,
-				B41EDBB01CFC24AB00E681D3 /* ViewController.h */,
-				B41EDBB11CFC24AB00E681D3 /* ViewController.m */,
-				B41EDBB31CFC24AB00E681D3 /* Main.storyboard */,
-				B41EDBB61CFC24AB00E681D3 /* Assets.xcassets */,
-				B41EDBB81CFC24AB00E681D3 /* LaunchScreen.storyboard */,
-				B41EDBBB1CFC24AB00E681D3 /* Info.plist */,
-				B41EDBDD1CFC251600E681D3 /* PickerLabelView.h */,
-				B41EDBDE1CFC251600E681D3 /* PickerLabelView.m */,
-				B41EDBAA1CFC24AB00E681D3 /* Supporting Files */,
-			);
-			path = PickUILabel;
-			sourceTree = "<group>";
-		};
-		B41EDBAA1CFC24AB00E681D3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B41EDBAB1CFC24AB00E681D3 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B41EDBC31CFC24AB00E681D3 /* PickUILabelTests */ = {
@@ -143,6 +118,32 @@
 				B41EDBD11CFC24AB00E681D3 /* Info.plist */,
 			);
 			path = PickUILabelUITests;
+			sourceTree = "<group>";
+		};
+		B431D53A1D055AF600228988 /* PickUILabel */ = {
+			isa = PBXGroup;
+			children = (
+				B431D53B1D055AF600228988 /* AppDelegate.h */,
+				B431D53C1D055AF600228988 /* AppDelegate.m */,
+				B431D53D1D055AF600228988 /* Assets.xcassets */,
+				B431D53E1D055AF600228988 /* LaunchScreen.storyboard */,
+				B431D5401D055AF600228988 /* Main.storyboard */,
+				B431D5421D055AF600228988 /* Info.plist */,
+				B431D5431D055AF600228988 /* main.m */,
+				B431D5441D055AF600228988 /* PickerLabelView */,
+				B431D5471D055AF600228988 /* ViewController.h */,
+				B431D5481D055AF600228988 /* ViewController.m */,
+			);
+			path = PickUILabel;
+			sourceTree = "<group>";
+		};
+		B431D5441D055AF600228988 /* PickerLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				B431D5451D055AF600228988 /* PickerLabelView.h */,
+				B431D5461D055AF600228988 /* PickerLabelView.m */,
+			);
+			path = PickerLabelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41EDBBA1CFC24AB00E681D3 /* LaunchScreen.storyboard in Resources */,
-				B41EDBB71CFC24AB00E681D3 /* Assets.xcassets in Resources */,
-				B41EDBB51CFC24AB00E681D3 /* Main.storyboard in Resources */,
+				B431D54D1D055AF600228988 /* Info.plist in Resources */,
+				B431D54C1D055AF600228988 /* Main.storyboard in Resources */,
+				B431D54A1D055AF600228988 /* Assets.xcassets in Resources */,
+				B431D54B1D055AF600228988 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41EDBB21CFC24AB00E681D3 /* ViewController.m in Sources */,
-				B41EDBAF1CFC24AB00E681D3 /* AppDelegate.m in Sources */,
-				B41EDBDF1CFC251600E681D3 /* PickerLabelView.m in Sources */,
-				B41EDBAC1CFC24AB00E681D3 /* main.m in Sources */,
+				B431D54E1D055AF600228988 /* main.m in Sources */,
+				B431D54F1D055AF600228988 /* PickerLabelView.m in Sources */,
+				B431D5501D055AF600228988 /* ViewController.m in Sources */,
+				B431D5491D055AF600228988 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,20 +316,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B41EDBB31CFC24AB00E681D3 /* Main.storyboard */ = {
+		B431D53E1D055AF600228988 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B41EDBB41CFC24AB00E681D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B41EDBB81CFC24AB00E681D3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B41EDBB91CFC24AB00E681D3 /* Base */,
+				B431D53F1D055AF600228988 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B431D5401D055AF600228988 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B431D5411D055AF600228988 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,6 +358,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -401,6 +407,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -426,6 +436,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PickUILabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CJ.Lian.Test;
@@ -442,6 +453,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PickUILabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CJ.Lian.Test;

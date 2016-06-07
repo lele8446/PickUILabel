@@ -20,13 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.pickView.textColor = [UIColor orangeColor];    
+    self.pickView.textColor = [UIColor orangeColor];
+    self.pickView.textFont = [UIFont systemFontOfSize:20];
+    self.pickView.componentsNumber = 4;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self.pickView initializeStatus];
 }
 
 - (IBAction)startClick:(id)sender {
