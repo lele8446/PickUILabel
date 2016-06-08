@@ -62,5 +62,9 @@ typedef enum : NSUInteger {
  */
 - (void)clearNum;
 
+/**
+ *  还原初始状态
+ *  针对iOS9之前的适配，需在动画之前执行该方法
+ */
 - (void)initializeStatus;
 @end

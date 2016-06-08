@@ -275,8 +275,13 @@
     if (!pickerLabel){
         pickerLabel = [[UILabel alloc] init];
         pickerLabel.frame = CGRectMake(0, 0, (self.bounds.size.width-(self.componentsNumber-1)*5)/self.componentsNumber, self.bounds.size.height);
-        pickerLabel.minimumScaleFactor = 2;
         pickerLabel.textColor = self.textColor;
+        
+        pickerLabel.minimumScaleFactor = 2;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        pickerLabel.minimumFontSize = 2;
+#pragma clang diagnostic pop
         pickerLabel.adjustsFontSizeToFitWidth = YES;
         [pickerLabel setTextAlignment:NSTextAlignmentCenter];
         [pickerLabel setBackgroundColor:[UIColor clearColor]];
@@ -284,6 +289,6 @@
     }
     pickerLabel.text = [self pickerView:pickerView titleForRow:row forComponent:component];
     [view addSubview:pickerLabel];
-    return pickerLabel;
+    return view;
 }
 @end
