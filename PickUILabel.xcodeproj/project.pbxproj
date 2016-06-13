@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B40590CE1D07E8F700A9227C /* PickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B40590CD1D07E8F700A9227C /* PickerLabelView.m */; };
+		B40590D11D0817EE00A9227C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40590CF1D0817EE00A9227C /* LaunchScreen.storyboard */; };
 		B41EDBC51CFC24AB00E681D3 /* PickUILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBC41CFC24AB00E681D3 /* PickUILabelTests.m */; };
 		B41EDBD01CFC24AB00E681D3 /* PickUILabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41EDBCF1CFC24AB00E681D3 /* PickUILabelUITests.m */; };
 		B431D5491D055AF600228988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B431D53C1D055AF600228988 /* AppDelegate.m */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		B40590CC1D07E8F700A9227C /* PickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerLabelView.h; sourceTree = "<group>"; };
 		B40590CD1D07E8F700A9227C /* PickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerLabelView.m; sourceTree = "<group>"; };
+		B40590D01D0817EE00A9227C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B41EDBA71CFC24AB00E681D3 /* PickUILabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickUILabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EDBC01CFC24AB00E681D3 /* PickUILabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUILabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EDBC41CFC24AB00E681D3 /* PickUILabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUILabelTests.m; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				B431D53C1D055AF600228988 /* AppDelegate.m */,
 				B431D53D1D055AF600228988 /* Assets.xcassets */,
 				B431D5401D055AF600228988 /* Main.storyboard */,
+				B40590CF1D0817EE00A9227C /* LaunchScreen.storyboard */,
 				B431D5421D055AF600228988 /* Info.plist */,
 				B431D5431D055AF600228988 /* main.m */,
 				B431D5471D055AF600228988 /* ViewController.h */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B431D54D1D055AF600228988 /* Info.plist in Resources */,
+				B40590D11D0817EE00A9227C /* LaunchScreen.storyboard in Resources */,
 				B431D54C1D055AF600228988 /* Main.storyboard in Resources */,
 				B431D54A1D055AF600228988 /* Assets.xcassets in Resources */,
 			);
@@ -312,6 +316,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B40590CF1D0817EE00A9227C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40590D01D0817EE00A9227C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		B431D5401D055AF600228988 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

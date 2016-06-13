@@ -277,7 +277,7 @@
         pickerLabel.frame = CGRectMake(0, 0, (self.bounds.size.width-(self.componentsNumber-1)*5)/self.componentsNumber, self.bounds.size.height);
         pickerLabel.textColor = self.textColor;
         
-        pickerLabel.minimumScaleFactor = 2;
+//        pickerLabel.minimumScaleFactor = 2;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         pickerLabel.minimumFontSize = 2;
